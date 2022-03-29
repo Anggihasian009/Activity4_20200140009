@@ -9,12 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PertemuanKeduaEvent">
-        <activity android:name=".DaftarActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ActivityLihatData"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Home"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ActivityHasil"
             android:exported="false"
             android:label="@string/label2"
-            android:parentActivityName=".ActivityHasil"/>
+            android:parentActivityName=".ActivityHasil" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

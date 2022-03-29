@@ -22,25 +22,6 @@ public class MainActivity extends AppCompatActivity {
     //Deklarasi variabel untuk menyimpan email dan password
     String nama, password;
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-       //Membuat kondisi jika yang dipilih adalah id mnDaftar
-        if (item.getItemId() == R.id.mnDaftar)
-        {
-            //Method untuk memanggil activity "DaftarActivity"
-            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
-            startActivity(i);
-        }
-        return super.onOptionsItemSelected(item);
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //Method untuk menampilkan menu.
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 if (nama.isEmpty() || password.isEmpty()){
                     //membuar variabel Toast dan menampilkan pesan "edittext tidak boleh kosong"
                     Toast a = Toast.makeText(getApplicationContext(),
-                              "Email dan Password wajib diisi", Toast.LENGTH_LONG);
+                            "Email dan Password wajib diisi", Toast.LENGTH_LONG);
                     //menampilkan toast
                     a.show();
                 }
@@ -90,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         //memasukkan value dari variabel password password dengan kunci "a" dan di masukkan kedalam bundle
                         b.putString("b", password.trim());
                         //membuat objek intent berpindah activity dari mainactivity ke ActivityHasil
-                        Intent i = new Intent(getApplicationContext(), ActivityHasil.class);
+                        Intent i = new Intent(getApplicationContext(), Activity_Home.class);
                         //memasukkan bundle kedalam intent untuk dikirimkan ke ActivityHasil
                         i.putExtras(b);
                         //berpindah ke ActivityHasil

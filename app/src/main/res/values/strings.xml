@@ -16,4 +16,15 @@
     <string name="epass">Masukkan Password</string>
     <string name="erepass">Masukkkan Pasword Kembali</string>
     <string name="ealamat">Masukkan Aalamt</string>
+
+    <string name="lihatdata">Lihat data</string>
+    <string name="editdata">Edit Data</string>
+    <string name="datakontak">Data Kontak</string>
+    <string name="namaitem">Nama Item</string>
+    <string name="detailkontak">Detail kontak</string>
+    <string name="nama">Nama</string>
+    <string name="notel">Nomer telepon</string>
+    <string name="labe2">Daftar kontak</string>
+    <string name="labe3">Detail Kontak</string>
+    <string name="mnDaftar">Daftar</string>
 </resources>
